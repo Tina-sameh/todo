@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo2/home/home_Screen.dart';
+import 'package:todoo/home/tabs/splash.dart';
 
 import 'home/home_Screen.dart';
 
@@ -15,9 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-    Home.routeName: (context)=> Home();
+        Splash.routeName:(context)=>Splash(),
+    Home.routeName: (context)=> Home(),
     },
-      initialRoute: Home.routeName ,
+      initialRoute: Splash.routeName ,
     );
   }
 }
